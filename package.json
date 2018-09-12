@@ -1,13 +1,12 @@
 {
   "name": "restful-api-express-mongodb",
   "version": "1.0.0",
-  "description": "\"Building a RESTful API with Express and MongoDB\"",
-  "main": "index.js",
+  "description": "Building a RESTful API with Express and MongoDB",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Sallée",
+  "license": "",
   "dependencies": {
     "express": "^4.16.3",
     "pug": "^2.0.3"
