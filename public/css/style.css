@@ -1,0 +1,13 @@
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1.information__name {
+  margin-bottom: 0;
+}
+
+h2.information__name {
+  margin-top: 0;
+}
