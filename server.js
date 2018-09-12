@@ -10,10 +10,30 @@ app.set('view engine', 'pug');
 const port = process.env.PORT || 5656;
 
 // Render a pug page (views/index.pug)
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
+//   res.render('index')
+// })
+
+// Redirect users to a desired ship page
+// if they navigate to the root of the website
+app.get('/', (req,res) =>{
+  res.redirect('/asp-explorer')
+})
+
+// Render each ships on the same pug template
+// Because each ship pages as the same structure
+app.get('/asp-explorer', (req, res) => {
   res.render('index')
 })
 
+app.get('/imperial-clipper', (req, res) => {
+  res.render('index')
+})
+
+app.get('/krait-mk2', (req, res) => {
+  res.render('index')
+})
+////////////////////////////////////////////////
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
