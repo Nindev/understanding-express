@@ -1,0 +1,39 @@
+doctype html 
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/static/css/style.css')
+    meta(name='viewport' content='windth=device-width, initial-scale=1')
+  body
+    .wrap
+      .profile.hide(style='background-image: url(' + bgImage + ');')
+        a(href='#').menu
+          span MENU
+        .menu
+          ul
+            li
+              a(href='/').menu-item
+                span HOME
+            li
+              a(href='/ships/').menu-item
+                span SHIPS
+      .information
+        .information__heading
+          span.information__heading SHIPS / 
+          span.information__heading__tag= ship
+        h1.information__name
+          | #{ship}
+        h2.information__name
+          small=manufacturer
+        .content-block
+          p.information__description= content
+        h3.information__name
+          small= price
+        .breadcrumb
+          ul 
+            li 
+              a(href="asp-explorer") ASP EXPLORER
+              a(href="imperial-clipper") IMPERIAL CLIPPER 
+              a(href="krait-mk2") KRAIT MKII 
+  script(src='js/script.js')
+
