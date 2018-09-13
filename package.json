@@ -1,7 +1,7 @@
 {
   "name": "restful-api-express-mongodb",
   "version": "1.0.0",
-  "description": "Building a RESTful API with Express and MongoDB",
+  "description": "Building a website with Express",
   "scripts": {
     "start": "nodemon server.js"
   },
